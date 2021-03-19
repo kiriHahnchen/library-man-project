@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="neo_libman" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/neo_libman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="misc_tools/encrypt/libencrypt.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/neo_libman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="misc_tools/encrypt/libencrypt.a" />
+				</Linker>
+			</Target>
+			<Target title="fast debug">
+				<Option output="bin/fast debug/neo_libman" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/fast debug/" />
+				<Option object_output="obj/fast debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c17" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="misc_tools/encrypt/libencrypt.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-g" />
+		</Compiler>
+		<Unit filename="database/account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="database/book.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="database/bookmark.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="database/database.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="database/libman_database.h" />
+		<Unit filename="database/option.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/booklist_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/booklist_interface.h" />
+		<Unit filename="interface/bookview_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/bookview_interface.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="interface/credit_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/credit_interface.h" />
+		<Unit filename="interface/libman_interface.h" />
+		<Unit filename="interface/login_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/login_interface.h" />
+		<Unit filename="interface/main_menu_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/main_menu_interface.h" />
+		<Unit filename="interface/option_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/option_interface.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="misc_tools/con_utils/con_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="misc_tools/con_utils/con_utils.h" />
+		<Unit filename="misc_tools/encrypt/encrypt.h" />
+		<Unit filename="misc_tools/encrypt/md5.h" />
+		<Unit filename="misc_tools/encrypt/md5global.h" />
+		<Unit filename="misc_tools/encrypt/mddriver.h" />
+		<Unit filename="misc_tools/libman_tools.h" />
+		<Unit filename="misc_tools/text_utils/searc_func_description.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="misc_tools/text_utils/text_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="misc_tools/text_utils/text_utils.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

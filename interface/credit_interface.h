@@ -1,0 +1,6 @@
+#ifndef CREDIT_INTERFACE_H_INCLUDED
+#define CREDIT_INTERFACE_H_INCLUDED
+
+void credit_intf(void);
+
+#endif // CREDIT_INTERFACE_H_INCLUDED
