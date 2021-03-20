@@ -1,5 +1,5 @@
 # library-man-project
- A simple console app, take a look! 
+ A simple console app, take a look!
  I do this app in around 4 months since I start learning C, although it is a thrown-away PJ anyway, I want to publish my code to show that you can do simple interactions in console.
 
 # Build instruction
