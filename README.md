@@ -1,3 +1,10 @@
 # library-man-project
- A simple console app
-Take a look
+ A simple console app, take a look! 
+
+# Build instruction
+ + Step 1: Open the .cbp file in your Code::Blocks IDE
+ + Step 2: Choosing your desired config and then 'Build'
+ + Step 3: You can go to the newly generated .\bin\Debug (or Release) to add pre-generated books and account to it, or you can run the program directly in C::B IDE
+
+# Note
+ I don't have time to rewrite this into a 'make' or 'cmake' project for now
