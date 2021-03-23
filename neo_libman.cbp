@@ -44,9 +44,6 @@
 					<Add option="-std=c17" />
 					<Add option="-g" />
 				</Compiler>
-				<Linker>
-					<Add library="misc_tools/encrypt/libencrypt.a" />
-				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
@@ -110,6 +107,7 @@
 		<Unit filename="misc_tools/encrypt/md5global.h" />
 		<Unit filename="misc_tools/encrypt/mddriver.h" />
 		<Unit filename="misc_tools/libman_tools.h" />
+		<Unit filename="misc_tools/text_utils/searc_func_description.cpp" />
 		<Unit filename="misc_tools/text_utils/searc_func_description.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
