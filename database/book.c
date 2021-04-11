@@ -103,7 +103,11 @@ int base_Book_add(BookData inputBook)
 
     _chdir("book");
     while (tmpnam(tmpStr) == NULL) ;
+    _chdir("..\\"); //temporary moves back to main folder
 
+    //This section is for recording what new file has been added
+    //almost similar to a full log-file
+    //automatically deleted when the program terminated
     FILE *fp = fopen("tmpnam_generated.txt","a+");
     fwrite(tmpStr,1,32,fp) ; fputc('\n',fp) ;
 
@@ -112,11 +116,12 @@ int base_Book_add(BookData inputBook)
     tmpStr[strlen(tmpStr) - 1] = '\0';
 
     fwrite(tmpStr,1,32,fp) ; fputc('\n',fp) ;
+    fclose(fp) ;
+    //finished logging
 
+    _chdir("book");
     base_Book[++bookNumber] = inputBook;
     Book_Write_single(base_Book[bookNumber]) ;
-
-    fclose(fp) ;
     _chdir("..\\");
 
     return 1;
