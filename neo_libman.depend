@@ -125,3 +125,17 @@
 	"../../database/libman_database.h"
 	"../con_utils/con_utils.h"
 
+1618122989 source:d:\github-clone\library-man-project\misc_tools\encrypt\encrypt.c
+	"encrypt.h"
+
+1618122989 source:d:\github-clone\library-man-project\misc_tools\encrypt\md5.c
+	"md5global.h"
+	"md5.h"
+
+1618122989 source:d:\github-clone\library-man-project\misc_tools\encrypt\mddriver.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"md5global.h"
+	"mddriver.h"
+
